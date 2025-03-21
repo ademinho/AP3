@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import doctor1 from "../../public/images/doctors/doctor1.jpg"
+import doctor2 from "../../public/images/doctors/doctor2.jpg"
+import doctor3 from "../../public/images/doctors/doctor3.jpg"
 
 const praticiens = [
   {
@@ -6,7 +9,7 @@ const praticiens = [
     nom: "Martin",
     prenom: "Jean-Pierre",
     specialite: "Médecin Généraliste",
-    image: "/images/doctors/usman-yousaf-2hhtxSn25fI-unsplash.jpg",
+    image: doctor1,
     medicaments: [
       { id: 1, nom: "Doliprane", prix: 5.99, description: "Paracétamol 500mg, 16 comprimés" },
       { id: 2, nom: "Aspirine", prix: 4.50, description: "Acide acétylsalicylique 500mg, 20 comprimés" },
@@ -19,7 +22,7 @@ const praticiens = [
     nom: "Dubois",
     prenom: "Marie",
     specialite: "Médecin Généraliste",
-    image: "/images/doctors/bruno-rodrigues-BCUUAsPECK4-unsplash.jpg",
+    image: doctor2,
     medicaments: [
       { id: 5, nom: "Doliprane", prix: 5.99, description: "Paracétamol 500mg, 16 comprimés" },
       { id: 6, nom: "Aspirine", prix: 4.50, description: "Acide acétylsalicylique 500mg, 20 comprimés" },
@@ -32,7 +35,7 @@ const praticiens = [
     nom: "Bernard",
     prenom: "Sophie",
     specialite: "Médecin Généraliste",
-    image: "/images/doctors/dalton-ngangi-ZCztndOWdjs-unsplash.jpg",
+    image: doctor3,
     medicaments: [
       { id: 9, nom: "Doliprane", prix: 5.99, description: "Paracétamol 500mg, 16 comprimés" },
       { id: 10, nom: "Aspirine", prix: 4.50, description: "Acide acétylsalicylique 500mg, 20 comprimés" },
@@ -76,7 +79,7 @@ function CommandePage() {
                     alt={`${praticien.prenom} ${praticien.nom}`}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                  <div className="absolute inset-0  from-black/60 to-transparent">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="flex items-center space-x-3 mb-2">
                         <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
